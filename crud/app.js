@@ -9,6 +9,9 @@ var sampledataRouter = require('./routes/sample_data');
 
 var app = express();
 
+app.set('views','./views');
+
+app.set('view engine', 'pug');
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
