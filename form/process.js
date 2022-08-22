@@ -40,23 +40,15 @@ app.get('/' , function(request,response , next){
 </head>
 <br>
 <body>
-    <form action="/" method="POST">
+    <form action="http://localhost:3000/sample_data" method="GET">
    <header><h1>  </h1><br></header>
    <img class="bll" src="image/5087579.png">
    `+ database_connection_status + `
    <main>
     <section class="id"><br>
 
-        <label class="name"for="Name">Name :</label>  <br>
-        <textarea class="namearea" id="myText" name="namearea" ></textarea><br><br>
-        <p class="dothis" id="dothan" ></p>
-
-        <label class="lastname"for="lastname">Last Name :</label><br>
-        <textarea class="lastnamearea"id ="myText1" name="lastnamearea"></textarea></br><br>
-        <p class="dothis1" id="dothan1"></p>
-
         <label class="CIN" for="CIN">CIN :</label><br>
-        <textarea class="CINarea" id ="myText3" name="CINarea"></textarea><br><br>
+        <textarea class="CINarea" id ="myText3" name="cin"></textarea><br><br>
         <p class="dothis2" id="dothan2"></p>
 
         <div>
