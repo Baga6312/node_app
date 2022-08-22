@@ -7,7 +7,7 @@ var database = require ('../database') ;
 router.get("/",function(request,response,next){
 	let lim = 123456
 
-	var query = "SELECT * FROM tasks " ;
+	var query = "SELECT * FROM tasks where cin = 'lim' " ;
 
 	database.query(query,function(error,data){
 		if (error){

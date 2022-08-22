@@ -34,11 +34,11 @@
                             </tr>
                             <% if(tasks.length > 0)
                             {
-                              tasks.forEach(function(data){
+                              tasks[0].tasks.split('.').forEach(function(data){
                             %>
                             <tr>
-                                <td><%= data.cin%></td>
-                                <td><%= data.tasks%></td>
+                                <td><%= tasks[0].cin%></td>
+                                <td><%= data%></td>
                             </tr>
                             <%
                                });
