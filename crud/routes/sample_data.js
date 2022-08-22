@@ -5,14 +5,16 @@ var router = express.Router() ;
 var database = require ('../database') ; 
 
 router.get("/",function(request,response,next){
-	var query = "SELECT * FROM sample_data ORDER BY id DESC" ;
+	let lim = 123456
+
+	var query = "SELECT * FROM tasks " ;
 
 	database.query(query,function(error,data){
 		if (error){
 			console.log("error") ; 
 		}else 
 		{
-			response.render('sample_data',{title:'Node.js MySQL CRUD Application' , action:'list' ,sampleData:data});
+			response.render('tasks',{title:'Node.js MySQL CRUD Application' , action:'list' ,tasks:data});
 		}
 	}); 
 });

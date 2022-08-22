@@ -9,15 +9,19 @@ var sampledataRouter = require('./routes/sample_data');
 
 var app = express();
 
-app.set('views','./views');
 
-app.set('view engine', 'pug');
+app.get('./index',(req,res)=>{
+    res.render("index")
+});
+app.set('view engine', 'ejs');
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 app.use('/sample_data', sampledataRouter);
+
+
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
