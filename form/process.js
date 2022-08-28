@@ -18,7 +18,7 @@ connection.connect(function(error){
     if (error){
         database_connection_status = '<h3  class="danger">MySQL Database Connection Error </h3><br>' ; 
     }else {
-        database_connection_status = '<h3  class="success">Node JS Application Successfully connect to MySQL Database</h3><br>' ; 
+        database_connection_status = '<h3  class="success">Welcome enter your CIN number </h3><br>' ; 
     }
 }); 
 
@@ -32,6 +32,7 @@ app.get('/' , function(request,response , next){
 <br lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&display=swap" rel="stylesheet">
     <link type="text/css" href="css/stylesheet.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/0bc02dfaeb.js" crossorigin="anonymous"></script>
@@ -40,7 +41,7 @@ app.get('/' , function(request,response , next){
 </head>
 <br>
 <body>
-    <form action="http://localhost:3000/sample_data" method="GET">
+    <form action="http://localhost:3000/sample_data" method="GET"> 
    <header><h1>  </h1><br></header>
    <img class="bll" src="image/5087579.png">
    `+ database_connection_status + `

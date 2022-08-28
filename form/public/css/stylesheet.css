@@ -201,5 +201,37 @@ padding-left: 40%;
 }
 
 .success {
-    padding-left: 30%;
+    padding-left: 42%;
+} 
+
+@media screen and ( max-width:1000px){
+    .id {
+    text-align:   center ;
+    box-shadow: 8px 15px 20px ;
+    border-style:fa-solid;
+    border-radius: 0.6em;
+    overflow:visible;
+    padding-bottom: 3%;
+    margin-left:10%;
+    margin-right: 10%;
+}
+.par2{
+    color : black; 
+    letter-spacing:  1px;
+    text-align:  center;
+    padding-bottom: 0%;
+    padding-top: 13.2%;
+    font-family: 'Josefin Sans', sans-serif;
+
+}
+.success {
+    padding-left: 25%;
+    padding-top: -15%,
+}
+.bll{
+    visibility:visible;
+    width:150px;
+margin-left: 150px;
+margin-top:-60px;
+}
 }
